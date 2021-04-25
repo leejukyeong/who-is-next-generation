@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="pink.png">
+    <title>Who is Next Generation</title>
+    <style>
+        .link {
+            padding: 77px;
+            text-decoration: none;
+            font-size: 25px;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        body {
+            background-image: url("배경.jpg");
+        }
+
+        @font-face {
+            font-family: 'ELAND_Nice_M';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/ELAND_Nice_M.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'twaysky';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_tway@1.0/twaysky.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        #menu {
+            font-family: 'twaysky';
+        }
+
+        #menu a {
+            color: black;
+        }
+
+        #menu a:hover {
+            color: hotpink;
+        }
+
+        table {
+            border-spacing: 10px;
+        }
+
+        h1 {
+            font-family: 'twaysky';
+        }
+
+        h1 span {
+            color: rgb(255, 30, 143);
+            font-size: 38px;
+        }
+    </style>
+    <script type="text/javascript">
+
+        function calcHeight() {
+
+            var the_height =
+                document.getElementById('iframebox').contentWindow.
+                    document.body.scrollHeight;
+
+            document.getElementById('iframebox').height =
+                the_height;
+
+            document.getElementById('iframebox').style.overflow = "hidden";
+        }
+        //출처 http://goodthing.me/saucetip/4664
+    </script>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>Who is <br><span>Next </span>Generation?</h1>
+        </div>
+    </header>
+
+    <div id="menu">
+        <table align="center">
+            <tr>
+                <td>
+                    <a class="link" href="home.html" target="main">Home</a>
+                </td>
+                <td>
+                    <a class="link" href="boygroup.html" target="main">Boy Group</a>
+                </td>
+                <td>
+                    <a class="link" href="girlgroup.html" target="main">Girl Group</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <br>
+
+    <iframe name="main" id="iframebox" src="home.html" onload="calcHeight();" frameborder=0
+        style="overflow-x:hidden; overflow:auto; width:100%; min-height:500px;" scrolling="no"></iframe>
+
+</body>
+
+</html>
