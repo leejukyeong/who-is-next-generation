@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Who is Next Generation</title>
+    <style>
+        @keyframes cursor {
+            50% {
+                border-color: transparent;
+            }
+        }
+
+        .text {
+            display: table-cell;
+            vertical-align: middle;
+            font-size: 65px;
+            height: 32px;
+            border-right: .05em solid black;
+            animation: cursor 0.5s ease infinite;
+
+        }
+
+        #textbox {
+            font-family: 'UhBeenamsoyoung';
+            position: absolute;
+            left: 380px;
+            top: 150px;
+        }
+
+        @font-face {
+            font-family: 'UhBeenamsoyoung';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_five@.2.0/UhBeenamsoyoung.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        #tbox p {
+            font-family: 'UhBeenamsoyoung';
+            left: 420px;
+            font-size: 18px;
+            position: absolute;
+            top: 270px;
+        }
+
+        #image {
+            position: absolute;
+            top: 50px;
+            left: 460px;
+        }
+
+        img {
+            width: 600px;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div id="image">
+        <img src="홈.png">
+    </div> -->
+    <div id="textbox">
+        <h1 class="text"></h1>
+        <script src="script.js"></script>
+    </div>
+    <div id="tbox">
+        <p>
+            K-POP의 다음 세대로 자리매김하게 될 아이돌에 누가 있는지 소개하는 웹 페이지입니다.</p>
+    </div>
+</body>
+
+</html>
